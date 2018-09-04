@@ -46,7 +46,7 @@ outputDir <- paste("Rout/", sep="")
 knitr::opts_knit$set(root.dir = getwd())
 
 # Rmarkdown(.Rmd) filename
-inputFileNm_Rmd <- "Rpgm/sample.Rmd"
+inputFileNm_Rmd <- "Rpgm/20180821_sample.Rmd"
 
 # output html filename
 outFilePath_html <- paste0(inputDir, "sample_", GetDateTime_YYYYMMDD_HHMMSS(), ".html")
