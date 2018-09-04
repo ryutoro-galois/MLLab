@@ -43,6 +43,10 @@ print(getwd())
 inputDir <- paste("Rin/", sep="")
 outputDir <- paste("Rout/", sep="")
 
+# make subfolder
+if(!file.exists(inputDir)) dir.create(inputDir)
+if(!file.exists(outputDir)) dir.create(outputDir)
+
 knitr::opts_knit$set(root.dir = getwd())
 
 # Rmarkdown(.Rmd) filename
