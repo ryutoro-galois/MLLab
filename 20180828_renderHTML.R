@@ -3,6 +3,8 @@
 # @date  : 2018/08/28(Tue.)
 # @brief : convert Rmarkdown to html
 
+batchFlg_renderHTML <- T
+
 # sessionInfo
 sessionInfo()
 
@@ -19,17 +21,6 @@ library(dplyr)
 library(ggplot2)
 library(rmarkdown)
 library(knitr)
-
-
-# @name : GetDateTime_YYYYMMDD_HHMMSS
-GetDateTime_YYYYMMDD_HHMMSS <- function()
-{
-  timex <- Sys.time()
-  yyyymmdd <- gsub("/", "", as.character(format(timex, "%Y/%m/%d")))
-  hhmmdd <- gsub(":", "", as.character(format(timex, "%H:%M:%S")))
-  res <- paste(yyyymmdd, "_", hhmmdd, sep="")
-  return(res)
-}
 
 # set working directory
 target_wd_ID <- 1 # 適宜変更
@@ -48,9 +39,11 @@ if(!file.exists(inputDir)) dir.create(inputDir)
 if(!file.exists(outputDir)) dir.create(outputDir)
 
 # load other sources
-source("Rpgm/geom_bar_titanic.R", encoding="utf-8")
-source("Rpgm/Tree_rpart_1var_titanic.R", encoding="utf-8")
-source("Rpgm/Tree_rpart_2var_titanic.R", encoding="utf-8")
+if(T){
+  source("Rpgm/20180828_geom_bar_titanic.R", encoding="utf-8")
+  source("Rpgm/20180828_Tree_rpart_1var_titanic.R", encoding="utf-8")
+  source("Rpgm/20180828_Tree_rpart_2var_titanic.R", encoding="utf-8")
+}
 
 knitr::opts_knit$set(root.dir = getwd())
 
