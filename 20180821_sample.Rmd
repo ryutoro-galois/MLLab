@@ -1,0 +1,265 @@
+---
+title: "Titanicデータ確認"
+date: "`r Sys.Date()`"
+author: name
+output:
+  rmdformats::readthedown:
+  highlight: kate
+  code_folding: hide
+  self_contained: true
+  thumbnails: false
+  lightbox: false
+  md_extensions: -ascii_identifiers
+  css: styles_customized.css
+---
+  
+```{r knitr_init, echo=FALSE, results="asis", cache=FALSE}
+## Global options
+options(max.print = "75")
+opts_chunk$set(echo = FALSE,
+               cache = FALSE,
+               prompt = FALSE,
+               tidy = FALSE,
+               comment = NA,
+               message = FALSE,
+               warning = FALSE)
+opts_knit$set(width = 75)
+```
+
+
+# set dataset filename as list
+```{r, echo=T}
+if(T){
+  lstInputFileNmList <- list()
+  lstInputFileNmList[["train"]] <- "train.csv"
+  lstInputFileNmList[["test"]] <- "test.csv"
+  lstInputFileNmList[["submit"]] <- "gender_submission.csv"
+}
+```
+
+
+# csvデータ読込み (read.csv)
+```{r, echo=T}
+inputFileName <- lstInputFileNmList[["train"]]
+inputFilePath <- paste(inputDir, inputFileName, sep="")
+datTrain <- read.csv(inputFilePath, header=T, stringsAsFactors=F)
+```
+
+# 対数変換
+```{r, echo=T}
+datTrain$Age_log <- log(1+abs(datTrain$Age))
+datTrain$Fare_log <- log(1+abs(datTrain$Fare))
+```
+
+# データの次元 (dim)
+```{r, echo=T}
+dim(datTrain)
+```
+
+
+# データのレコード数 (nrow)
+```{r, echo=T}
+nrow(datTrain)
+```
+
+
+# データのカラム数 (ncol)
+```{r, echo=T}
+ncol(datTrain)
+```
+
+
+# カラム名 (colnames)
+```{r, echo=T}
+colnames(datTrain)
+```
+
+
+# カラム名・データ型 (str)
+```{r, echo=T}
+str(datTrain)
+```
+
+
+# 学習用データ数 (train.csv)
+```{r, echo=F}
+nSample <- format(nrow(datTrain), big.mark=",")
+forprint <- paste("nSample = ", nSample, sep="")
+print(forprint, quote=F)
+```
+
+
+# 先頭データ (head 6rows)
+```{r results="asis", echo=T}
+knitr::kable(head(datTrain), format="pandoc", caption="")
+```
+
+
+# 後尾データ (tail 6rows)
+```{r results="asis", echo=T}
+knitr::kable(tail(datTrain), format="pandoc", caption="")
+```
+
+
+# サマリー
+```{r results="asis", echo=T}
+summary(datTrain)
+```
+
+
+# 集計(1軸)
+```{r results="asis", echo=T}
+tbl <- table(datTrain[,"Survived"], useNA="always")
+knitr::kable(tbl, format = "pandoc", caption="")
+```
+
+
+```{r results="asis", echo=T}
+tbl <- table(datTrain[,"Pclass"], useNA="always")
+knitr::kable(tbl, format = "pandoc", caption="")
+```
+
+
+```{r results="asis", echo=T}
+tbl <- table(datTrain[,"Sex"], useNA="always")
+knitr::kable(tbl, format = "pandoc", caption="")
+```
+
+
+# quantile
+```{r results="asis", echo=T}
+quantile(datTrain[,"Age"], na.rm=T, probs=seq(0,1,0.05))
+quantile(datTrain[,"Age"], na.rm=T, probs=seq(0.95,1,0.005))
+```
+
+
+# histogram (Age)
+```{r results="asis", echo=T}
+p <- ggplot(datTrain, aes(x=Age))
+p <- p + geom_histogram(colour="black", fill="white")
+p <- p + theme(axis.text.x=element_text(size=14, face="bold"),
+               axis.text.y=element_text(size=14, face="bold"))
+plot(p)
+```
+
+# histogram (Age_log)
+```{r results="asis", echo=T}
+p <- ggplot(datTrain, aes(x=Age_log))
+p <- p + geom_histogram(colour="black", fill="white")
+p <- p + theme(axis.text.x=element_text(size=14, face="bold"),
+               axis.text.y=element_text(size=14, face="bold"))
+plot(p)
+```
+
+# histogram (Fare)
+```{r results="asis", echo=T}
+p <- ggplot(datTrain, aes(x=Fare))
+p <- p + geom_histogram(colour="black", fill="white")
+p <- p + theme(axis.text.x=element_text(size=14, face="bold"),
+               axis.text.y=element_text(size=14, face="bold"))
+plot(p)
+```
+
+# histogram (Fare_log)
+```{r results="asis", echo=T}
+p <- ggplot(datTrain, aes(x=Fare_log))
+p <- p + geom_histogram(colour="black", fill="white")
+p <- p + theme(axis.text.x=element_text(size=14, face="bold"),
+               axis.text.y=element_text(size=14, face="bold"))
+plot(p)
+```
+
+
+
+# boxplot (Age by Sex)
+```{r results="asis", echo=T}
+p <- ggplot(datTrain, aes(x=Sex, y=Age, group=Sex))
+p <- p + geom_boxplot(outlier.shape=NA, notch=F, coef=1.0)
+p <- p + stat_summary(fun.y=mean, geom="point", shape=20, size=3, fill="white", show.legend=FALSE)
+p <- p + theme(axis.text.x=element_text(size=14, face="bold"),
+               axis.text.y=element_text(size=14, face="bold"))
+plot(p)
+```
+
+
+# boxplot (Fare, by Pclass)
+```{r results="asis", echo=T}
+p <- ggplot(datTrain, aes(x=Pclass, y=Fare_log, group=Pclass))
+#p <- p + geom_boxplot(outlier.shape=NA, notch=F, coef=1.0)
+p <- p + geom_boxplot()
+p <- p + stat_summary(fun.y=mean, geom="point", shape=20, size=3, fill="white", show.legend=FALSE)
+p <- p + theme(axis.text.x=element_text(size=14, face="bold"),
+               axis.text.y=element_text(size=14, face="bold"))
+plot(p)
+```
+
+
+# boxplot (Fare_log>2.0, by Pclass)
+```{r results="asis", echo=T}
+fillFlg_eff <- datTrain[,"Fare_log"]>2.0
+datTrain_eff <- datTrain[fillFlg_eff,]
+
+p <- ggplot(datTrain_eff, aes(x=Pclass, y=Fare_log, group=Pclass))
+#p <- p + geom_boxplot(outlier.shape=NA, notch=F, coef=1.0)
+p <- p + geom_boxplot()
+p <- p + stat_summary(fun.y=mean, geom="point", shape=20, size=3, fill="white", show.legend=FALSE)
+p <- p + theme(axis.text.x=element_text(size=14, face="bold"),
+               axis.text.y=element_text(size=14, face="bold"))
+plot(p)
+```
+
+
+# boxplot (Age by Survived)
+```{r results="asis", echo=T}
+p <- ggplot(datTrain, aes(x=Survived, y=Age, group=Survived))
+#p <- p + geom_boxplot(outlier.shape=NA, notch=F, coef=1.0)
+p <- p + geom_boxplot()
+p <- p + stat_summary(fun.y=mean, geom="point", shape=20, size=3, fill="white", show.legend=FALSE)
+p <- p + theme(axis.text.x=element_text(size=14, face="bold"),
+               axis.text.y=element_text(size=14, face="bold"))
+plot(p)
+```
+
+# boxplot (Fare_log > 2.0 by Survived)
+```{r results="asis", echo=T}
+fillFlg_eff <- datTrain[,"Fare_log"]>2.0
+datTrain_eff <- datTrain[fillFlg_eff,]
+
+p <- ggplot(datTrain_eff, aes(x=Survived, y=Fare_log, group=Survived))
+#p <- p + geom_boxplot(outlier.shape=NA, notch=F, coef=1.0)
+p <- p + geom_boxplot()
+p <- p + stat_summary(fun.y=mean, geom="point", shape=20, size=3, fill="white", show.legend=FALSE)
+p <- p + theme(axis.text.x=element_text(size=14, face="bold"),
+               axis.text.y=element_text(size=14, face="bold"))
+plot(p)
+```
+
+
+# 相関 (correlation) : {"Age","Embarked"}
+```{r results="asis", echo=T}
+library(psych)
+psych::pairs.panels(datTrain[,c("Survived","Age","Embarked")])
+```
+
+
+# 相関 (correlation) : {"Pclass","Fare","Sex"}
+```{r results="asis", echo=T}
+library(psych)
+psych::pairs.panels(datTrain[,c("Survived","Pclass","Fare","Sex")])
+```
+
+
+# 相関 (correlation) : {"SibSp","Parch","Cabin"}
+```{r results="asis", echo=T}
+library(psych)
+psych::pairs.panels(datTrain[,c("Survived","SibSp","Parch","Cabin")])
+```
+
+
+# 相関 (correlation) : {"Pclass","Cabin"}
+```{r results="asis", echo=T}
+library(psych)
+psych::pairs.panels(datTrain[,c("Survived","Pclass","Cabin")])
+```
+
+
