@@ -238,12 +238,6 @@ plotTree_rpart.plot_png <- function(model, outFilePath, titleLabel, width, heigh
         table(box.col_yval2)
       }
       # prp()関数
-      if(F){
-        prp(model, main=titleLabel, cex.main=2.0, type=2, extra=106, tweak=1.5, digits=3, varlen=0, faclen=0,
-            nn=T, ni=F, yesno=1, compress=T, ycompress=T, fallen.leaves=F, xflip=F, yflip=F,
-            Margin=0, gap=5.0, leaf.round=0, facsep=",", nn.round=0, 
-            box.col=c("grey","white")[box.col_yval2], shadow.col="grey", under=T)
-      }
       if(T){
         prp(model, main=titleLabel, cex.main=2.0, type=2, extra=106, tweak=1.5, digits=3, varlen=0, faclen=0,
             nn=T, ni=F, yesno=1, compress=T, ycompress=T, fallen.leaves=F, xflip=F, yflip=F,
@@ -345,9 +339,7 @@ getLeafRules.rpart <- function(model, isProbNo=T, isReplaceNodeIDInPartykit=T)
     # 上書き
     res[,"node"] <- nodeID_InPartykit
   }
-  
   return(res)
 }
-
 
 #=== [END]:R-Script ===
