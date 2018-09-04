@@ -1,0 +1,13 @@
+no,varname,class,type,isuse,isuse_Tree
+1,PassengerId,integer,category,1,0
+2,Survived,integer,category,1,0
+3,Pclass,integer,category,1,1
+4,Name,character,category,1,0
+5,Sex,character,category,1,1
+6,Age,numeric,category,1,1
+7,SibSp,integer,category,1,0
+8,Parch,integer,category,1,0
+9,Ticket,character,category,1,0
+10,Fare,numeric,category,1,1
+11,Cabin,character,category,1,0
+12,Embarked,character,category,1,0
