@@ -1,4 +1,4 @@
-# LoadData_Titanic.R
+# InitSettings_Titanic.R
 #
 # @date  : 2018/09/06
 # @brief : Titanicデータの読込・加工
