@@ -282,8 +282,8 @@ if(T){
 if(T){
   
   # 混同行列 (confusionMatrix)
-  ConfMat_train <- confusionMatrix(datTrain_ext[,paste0(targetName, "_pred")], datTrain_ext[,targetName]) 
-  ConfMat_vaild <- confusionMatrix(datValid_ext[,paste0(targetName, "_pred")], datValid_ext[,targetName]) 
+  ConfMat_train <- caret::confusionMatrix(datTrain_ext[,paste0(targetName, "_pred")], datTrain_ext[,targetName]) 
+  ConfMat_vaild <- caret::confusionMatrix(datValid_ext[,paste0(targetName, "_pred")], datValid_ext[,targetName]) 
   
   # 正解率 (accuracy)
   Accuracy_train <- sum(diag(ConfMat_train)) / sum(ConfMat_train)
