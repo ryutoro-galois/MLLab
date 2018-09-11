@@ -1,7 +1,7 @@
 # 20180906_TreeModel.R
 #
 # @date : 2018/09/06(Thu.)
-# @note : 決定木モデル
+# @note : 決定木モデル(事前剪定; Pre-Pruning)
 
 # install.packages
 if(F){
@@ -21,6 +21,11 @@ library(caret)
 
 # statisticalMethodNm
 statisticalMethodNm <- "TreeModel"
+
+
+# T=事前剪定(Pre-Pruning; 最大階層数などで停止条件を規定する場合)
+# F=事後剪定(Post-Pruning; 1se-rule等を利用して剪定を行う場合)
+isPrePruing <- T
 
 
 if(T){
