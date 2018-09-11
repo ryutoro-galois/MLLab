@@ -130,7 +130,7 @@ if(T){
   
   # plot cp
   if(T){
-    outFileName <- paste("plotCP_cp0_Maxdepth_", MaxDepth_cp0, ".png", sep="")
+    outFileName <- paste("plotCP_cp0_Maxdepth_", MaxDepth_cp0, "_", GetDateTime_YYYYMMDD_HHMMSS(), ".png", sep="")
     outFilePath <- paste(outputDir, outFileName, sep="")
     CNST_WIDTH <- 600
     CNST_HEIGHT <- CNST_WIDTH * 0.6
@@ -151,13 +151,14 @@ if(T){
   
   # output csv (CPInfo_cp0)
   if(T){
-    outFileName <- paste("CPInfo_cp0_Maxdepth_", MaxDepth_cp0, ".csv", sep="")
+    outFileName <- paste("CPInfo_cp0_Maxdepth_", MaxDepth_cp0, "_", GetDateTime_YYYYMMDD_HHMMSS(), ".csv", sep="")
     outFilePath <- paste(outputDir, outFileName, sep="")
     write.csv(CPInfo_cp0, outFilePath, row.names=F)
   }
   
   # 1SE rule
   CPInfo <- one_se_rule_rpart(model_cp0)
+  row.names(CPInfo) <- NULL
   
   # get cp_min
   if(T){
@@ -176,14 +177,14 @@ if(T){
   # prune by cp_min or cp_1se
   lst_model[["model_cp_min"]] <- rpart::prune(model_cp0, cp_min)
   lst_model[["model_cp_1se"]] <- rpart::prune(model_cp0, cp_1se)
-
+  
   # set
   model <- lst_model[["model_cp_min"]]
   #model <- lst_model[["model_cp_1se"]]
   
   # output csv (CPInfo)
   if(T){
-    outFileName <- paste("CPInfo_1se_rule.csv", sep="")
+    outFileName <- paste("CPInfo_1se_rule_", GetDateTime_YYYYMMDD_HHMMSS(), ".csv", sep="")
     outFilePath <- paste(outputDir, outFileName, sep="")
     write.csv(CPInfo, outFilePath, row.names=F)
   }
@@ -198,7 +199,7 @@ if(T){
   # set
   lstPrint[["CPInfo"]] <- CPInfo
   
-
+  
   ################################
   ### plot Tree Result(樹形図) ###
   ################################
@@ -225,7 +226,7 @@ if(T){
       # use later
       titleLabel_partykit <- titleLabel
     }
-    outFileName <- paste("tree_rpart.plot_", strTreeCondition, ".png", sep="")
+    outFileName <- paste("tree_rpart.plot_", strTreeCondition, "_", GetDateTime_YYYYMMDD_HHMMSS(), ".png", sep="")
     outFilePath <- paste(outputDir, outFileName, sep="")
     
     # set
@@ -313,7 +314,7 @@ if(T){
     
     # output csv (leafRules_All)
     if(T){
-      outFileName <- paste("tree_leafRules_rpart_", strTreeCondition, ".csv", sep="")
+      outFileName <- paste("tree_leafRules_rpart_", strTreeCondition, "_", GetDateTime_YYYYMMDD_HHMMSS(), ".csv", sep="")
       outFilePath <- paste(outputDir, outFileName, sep="")
       write.csv(leafRules, outFilePath, row.names=F)
     }
@@ -414,7 +415,8 @@ if(T){
       CNST_FONT_SIZE <- 16
     }
     
-    outFileName <- paste("ROCCurve_[", statisticalMethodNm, "]_trainDataRatio_", trainDataRatio, ".png", sep="")
+    outFileName <- paste("ROCCurve_[", statisticalMethodNm, "]_trainDataRatio_", trainDataRatio, 
+                         "_", GetDateTime_YYYYMMDD_HHMMSS(), ".png", sep="")
     outFilePath <- paste(outputDir, outFileName, sep="")
     
     # set
@@ -440,11 +442,11 @@ print(round(cbind(trainDataRatio, AUC_train, AUC_valid, AUC_diff), 3))
 if(T){
   df_submission <- data.frame("PassengerId"=datTest_org[,"PassengerId"], 
                               "Survived"=datTest_ext[,paste0(targetName, "_pred")])
-  outFileName <- paste0("output_[", statisticalMethodNm, "]_cutoff_", cutoff, ".csv")
+  
+  outFileName <- paste0("output_[", statisticalMethodNm, "]_cutoff_", cutoff, "_", GetDateTime_YYYYMMDD_HHMMSS(), ".csv")
   outFilePath <- paste(outputDir, outFileName, sep="")
   write.csv(df_submission, outFilePath, row.names=F, quote=F)
 }
 
 
 #=== [END]:R-Script ===
-
