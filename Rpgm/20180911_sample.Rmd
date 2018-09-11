@@ -63,7 +63,7 @@ knitr::kable(lstPrint[["partitionData"]], format = "pandoc", caption="")
 
 ## リーフ数(複雑度cp)に対する誤差プロット(CPplot)
 ```{r results="asis", echo=F}
-url <- paste0(getwd(), "/", lstOutFilePath[["rpart.CPplot"]])
+url <- paste0(getwd(), "/", lstOutFilePath[["plotCP_cp0"]])
 cat(sprintf('![](%s)', url), sep="¥n")
 ```
 
