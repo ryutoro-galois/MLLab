@@ -348,6 +348,38 @@ getLeafRules.rpart <- function(model, isProbNo=T, isReplaceNodeIDInPartykit=T)
 ############################################
 
 
+# @name  : one_se_rule_rpart
+# @brief : 1SEルールに基づく最適樹木の剪定(tree for post-pruning)
+one_se_rule_rpart <- function(model)
+{
+  x <- model$cptable
+  j0 <- which.min(x[,"xerror"])
+  Rcv.min <- x[j0,"xerror"]
+  one.se <- x[j0,"xstd"]
+  j1 <- 1
+  while(x[j1,"xerror"] > Rcv.min + one.se) { j1 <- j1 + 1 }
+  
+  # j0=min, j1=1se
+  if(j0 != j1){
+    res <- x[c(j0,j1),]
+  } else {
+    res <- rbind(x[j0,], x[j1,])
+  }
+  res <- data.frame(res)
+  type <- c("min", "1se")
+  xval <- model$control$xval
+  maxdepth <- model$control$maxdepth
+  
+  res <- cbind(type, res, xval, maxdepth)
+  
+  return(res)
+}
+#=== [END]:one_se_rule_rpart ===
+
+
+############################################
+
+
 # @name  : varImp.rpart
 # @brief : 変数重要度の計算(rpart) 
 varImp.rpart <- function(fit)
