@@ -14,6 +14,16 @@ output:
 ---
   
 ```{r knitr_init, echo=FALSE, results="asis", cache=FALSE}
+
+# install.packages
+if(F){
+  install.packages("rmdformats", dependencies = T)
+  install.packages("DT", dependencies = T)
+}
+
+library(rmdformats)
+library(DT)
+
 ## Global options
 options(max.print = "75")
 opts_chunk$set(echo = FALSE,
@@ -59,7 +69,7 @@ cat(sprintf('![](%s)', url), sep="¥n")
   
 ## 決定木ルール抽出 (Each Leaf Rules)
 ```{r results="asis", echo=F}
-knitr::kable(lstPrint[["leafRules"]], format="pandoc", caption="")
+DT::datatable(lstPrint[["leafRules"]])
 ```
 
 

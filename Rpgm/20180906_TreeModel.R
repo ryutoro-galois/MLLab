@@ -339,7 +339,7 @@ if(T){
       mainTitle <- paste("【ROC Curve】\n", "AUC(Train)=",round(AUC_train,3), ",  AUC(Valid)=",round(AUC_valid,3), sep="")
       subTitle <- NULL
       colourList=c("black","black","black")
-      CNST_WIDTH <- 800
+      CNST_WIDTH <- 600
       CNST_HEIGHT <- CNST_WIDTH * 0.8
       CNST_FONT_SIZE <- 16
     }
