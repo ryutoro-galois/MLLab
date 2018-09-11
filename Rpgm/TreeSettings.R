@@ -71,6 +71,15 @@ if(isPrePruing == T)
 } else {
   
   # 事後剪定
+  
+  # CPType
+  if(T){
+    PostPruning_CPTypeID <- 1
+    PostPruning_CPTypeList <- c("cp_min", "cp_1se")
+    PostPruning_CPTypeNm <- PostPruning_CPTypeList[PostPruning_CPTypeID]
+  }
+  
+  # MaxDepth_cp0
   if(T){
     #MaxDepth_cp0 <- 10
     #MaxDepth_cp0 <- 15
@@ -79,11 +88,6 @@ if(isPrePruing == T)
   }
   
 }
-
-
-
-
-
 
 # ===[END]:決定木param===
 
