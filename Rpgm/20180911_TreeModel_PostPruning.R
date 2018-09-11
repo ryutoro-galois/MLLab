@@ -175,12 +175,11 @@ if(T){
   }
   
   # prune by cp_min or cp_1se
-  lst_model[["model_cp_min"]] <- rpart::prune(model_cp0, cp_min)
-  lst_model[["model_cp_1se"]] <- rpart::prune(model_cp0, cp_1se)
+  lst_model[["cp_min"]] <- rpart::prune(model_cp0, cp_min)
+  lst_model[["cp_1se"]] <- rpart::prune(model_cp0, cp_1se)
   
   # set
-  model <- lst_model[["model_cp_min"]]
-  #model <- lst_model[["model_cp_1se"]]
+  model <- lst_model[[PostPruning_CPTypeNm]] # "cp_min" or "cp_1se"
   
   # output csv (CPInfo)
   if(T){
@@ -210,7 +209,7 @@ if(T){
     CNST_HEIGHT <- CNST_WIDTH * 0.6
     CNST_FONT_SIZE <- 24
     
-    strTreeCondition <- paste0("cp0_Maxdepth_", MaxDepth_cp0)
+    strTreeCondition <- paste0("cp0_Maxdepth_", MaxDepth_cp0, "_", PostPruning_CPTypeNm)
     
     # titleLabel
     if(T){
@@ -450,3 +449,4 @@ if(T){
 
 
 #=== [END]:R-Script ===
+
