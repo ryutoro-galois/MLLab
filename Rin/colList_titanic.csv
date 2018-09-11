@@ -1,13 +1,13 @@
-no,varname,class,type,isuse,isuse_Tree
-1,PassengerId,integer,category,1,0
-2,Survived,integer,category,1,0
-3,Pclass,integer,category,1,1
-4,Name,character,category,1,0
-5,Sex,character,category,1,1
-6,Age,numeric,category,1,1
-7,SibSp,integer,category,1,0
-8,Parch,integer,category,1,0
-9,Ticket,character,category,1,0
-10,Fare,numeric,category,1,1
-11,Cabin,character,category,1,0
-12,Embarked,character,category,1,0
+no,varname,class,isuse_Tree,isuse_Tree_2,memo
+1,PassengerId,integer,0,0,autoNo(NotUsed)
+2,Survived,integer,0,0,objective variable
+3,Pclass,integer,1,1,explanatory variable candidates
+4,Name,character,0,0,explanatory variable candidates
+5,Sex,character,1,1,explanatory variable candidates
+6,Age,numeric,1,1,explanatory variable candidates
+7,SibSp,integer,1,0,explanatory variable candidates
+8,Parch,integer,1,0,explanatory variable candidates
+9,Ticket,character,0,0,explanatory variable candidates
+10,Fare,numeric,1,1,explanatory variable candidates
+11,Cabin,character,0,0,explanatory variable candidates
+12,Embarked,character,1,0,explanatory variable candidates
