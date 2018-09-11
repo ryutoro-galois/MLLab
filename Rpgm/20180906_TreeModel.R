@@ -282,19 +282,35 @@ if(T){
 if(T){
   
   # 混同行列 (confusionMatrix)
-  ConfMat_train <- caret::confusionMatrix(datTrain_ext[,paste0(targetName, "_pred")], datTrain_ext[,targetName]) 
-  ConfMat_vaild <- caret::confusionMatrix(datValid_ext[,paste0(targetName, "_pred")], datValid_ext[,targetName]) 
+  if(T){
+    pred_Train <- datTrain_ext[,paste0(targetName, "_pred")]
+    pred_Train <- as.factor(pred_Train)
+    levels(pred_Train) <- responseLabel
+    ConfMat_train <- caret::confusionMatrix(pred_Train, datTrain_ext[,targetName]) 
+  }
+  
+  if(T){
+    pred_Valid <- datValid_ext[,paste0(targetName, "_pred")]
+    pred_Valid <- as.factor(pred_Valid)
+    levels(pred_Valid) <- responseLabel
+    ConfMat_vaild <- caret::confusionMatrix(pred_Valid, datValid_ext[,targetName]) 
+  }
   
   # 正解率 (accuracy)
-  Accuracy_train <- sum(diag(ConfMat_train)) / sum(ConfMat_train)
-  Accuracy_valid <- sum(diag(ConfMat_vaild)) / sum(ConfMat_vaild)
-
-  AccuracyInfo <- data.frame("Accuracy_train"=Accuracy_train, "Accuracy_valid"=Accuracy_valid)
-  AccuracyInfo <- round(AccuracyInfo, 3)
+  if(T){
+    Accuracy_train <- ConfMat_train$overall["Accuracy"]
+    Accuracy_valid <- ConfMat_vaild$overall["Accuracy"]
+    #Accuracy_train <- sum(diag(ConfMat_train)) / sum(ConfMat_train)
+    #Accuracy_valid <- sum(diag(ConfMat_vaild)) / sum(ConfMat_vaild)
+  }
+  
+  AccuracyInfo <- data.frame("Accuracy_train"=Accuracy_train, "Accuracy_valid"=Accuracy_valid,
+                             "Accuracy_diff"=Accuracy_train-Accuracy_valid)
+  AccuracyInfo <- round(AccuracyInfo, 4)
   
   # set
-  lstPrint[["ConfMat_train"]] <- ConfMat_train
-  lstPrint[["ConfMat_vaild"]] <- ConfMat_vaild
+  lstPrint[["ConfMat_train"]] <- ConfMat_train$table
+  lstPrint[["ConfMat_vaild"]] <- ConfMat_vaild$table
   lstPrint[["AccuracyInfo"]] <- AccuracyInfo
 }
 
