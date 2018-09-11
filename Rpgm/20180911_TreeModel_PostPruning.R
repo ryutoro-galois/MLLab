@@ -132,7 +132,7 @@ if(T){
   if(T){
     outFileName <- paste("plotCP_cp0_Maxdepth_", MaxDepth_cp0, "_", GetDateTime_YYYYMMDD_HHMMSS(), ".png", sep="")
     outFilePath <- paste(outputDir, outFileName, sep="")
-    CNST_WIDTH <- 600
+    CNST_WIDTH <- 800
     CNST_HEIGHT <- CNST_WIDTH * 0.6
     CNST_FONT_SIZE <- 24
     
