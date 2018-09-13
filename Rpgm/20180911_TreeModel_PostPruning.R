@@ -93,7 +93,7 @@ if(T){
   }
   
   datTrain <- datTrain_All[idx_Train,]
-  datVaild <- datTrain_All[-idx_Train,]
+  datValid <- datTrain_All[-idx_Train,]
   
   # set
   lstPrint[["partitionData"]] <- res[["summaryInfo"]]
@@ -104,7 +104,7 @@ if(T){
 
 # init
 datTrain_ext <- datTrain
-datValid_ext <- datVaild
+datValid_ext <- datValid
 datTest_ext <- datTest
 
 
@@ -325,7 +325,7 @@ if(T){
   if(T){
     varname_NEW <- "predProb"
     datTrain_ext[, varname_NEW] <- as.numeric(predict(model, dat, method="prob")[,2])
-    datValid_ext[, varname_NEW] <- as.numeric(predict(model, datVaild, method="prob")[,2])
+    datValid_ext[, varname_NEW] <- as.numeric(predict(model, datValid, method="prob")[,2])
     datTest_ext[, varname_NEW] <- as.numeric(predict(model, datTest, method="prob")[,2])
   }
   
