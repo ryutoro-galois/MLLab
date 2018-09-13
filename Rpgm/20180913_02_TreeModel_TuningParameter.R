@@ -23,8 +23,8 @@ if(F){
 
 # modelMethod
 if(T){
-  #targetModelMethodID <- 1
-  targetModelMethodID <- 2
+  targetModelMethodID <- 1
+  #targetModelMethodID <- 2
 }
 modelMethodList <- c("rpart", "rpart2")
 targetModelMethodNm <- modelMethodList[targetModelMethodID]
