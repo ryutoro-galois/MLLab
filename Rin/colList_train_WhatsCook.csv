@@ -1,0 +1,327 @@
+no,varname,class,type,isuse,isuse_Tree,fileName
+1,autoNo,integer,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+2,no,integer,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+3,id,integer,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+4,cuisine,character,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+5,num_ingredients,integer,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+6,ingredients_str,character,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+7,ing0001_salt,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+8,ing0002_onions,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+9,ing0003_olive oil,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+10,ing0004_water,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+11,ing0005_garlic,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+12,ing0006_sugar,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+13,ing0007_garlic cloves,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+14,ing0008_butter,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+15,ing0009_ground black pepper,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+16,ing0010_all-purpose flour,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+17,ing0011_vegetable oil,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+18,ing0012_pepper,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+19,ing0013_eggs,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+20,ing0014_soy sauce,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+21,ing0015_kosher salt,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+22,ing0016_green onions,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+23,ing0017_tomatoes,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+24,ing0018_large eggs,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+25,ing0019_carrots,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+26,ing0020_unsalted butter,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+27,ing0021_ground cumin,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+28,ing0022_extra-virgin olive oil,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+29,ing0023_black pepper,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+30,ing0024_milk,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+31,ing0025_chili powder,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+32,ing0026_oil,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+33,ing0027_red bell pepper,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+34,ing0028_purple onion,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+35,ing0029_scallions,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+36,ing0030_grated parmesan cheese,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+37,ing0031_corn starch,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+38,ing0032_ginger,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+39,ing0033_sesame oil,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+40,ing0034_jalapeno chilies,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+41,ing0035_baking powder,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+42,ing0036_dried oregano,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+43,ing0037_chopped cilantro fresh,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+44,ing0038_fresh lemon juice,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+45,ing0039_diced tomatoes,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+46,ing0040_minced garlic,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+47,ing0041_fresh parsley,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+48,ing0042_sour cream,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+49,ing0043_chicken broth,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+50,ing0044_cayenne pepper,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+51,ing0045_cooking spray,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+52,ing0046_brown sugar,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+53,ing0047_fresh ginger,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+54,ing0048_shallots,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+55,ing0049_lime,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+56,ing0050_garlic powder,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+57,ing0051_lemon juice,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+58,ing0052_fresh lime juice,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+59,ing0053_flour,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+60,ing0054_honey,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+61,ing0055_vanilla extract,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+62,ing0056_paprika,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+63,ing0057_fish sauce,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+64,ing0058_chopped onion,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+65,ing0059_canola oil,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+66,ing0060_lemon,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+67,ing0061_ground cinnamon,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+68,ing0062_rice vinegar,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+69,ing0063_avocado,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+70,ing0064_dry white wine,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+71,ing0065_yellow onion,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+72,ing0066_green bell pepper,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+73,ing0067_heavy cream,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+74,ing0068_tomato paste,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+75,ing0069_cilantro leaves,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+76,ing0070_cilantro,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+77,ing0071_fresh basil,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+78,ing0072_white sugar,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+79,ing0073_boneless skinless chicken breasts,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+80,ing0074_flat leaf parsley,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+81,ing0075_lime juice,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+82,ing0076_bay leaves,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+83,ing0077_chicken stock,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+84,ing0078_potatoes,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+85,ing0079_chicken,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+86,ing0080_corn tortillas,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+87,ing0081_salsa,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+88,ing0082_ground turmeric,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+89,ing0083_cumin seed,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+90,ing0084_freshly ground pepper,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+91,ing0085_cumin,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+92,ing0086_garam masala,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+93,ing0087_baking soda,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+94,ing0088_sea salt,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+95,ing0089_shrimp,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+96,ing0090_black beans,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+97,ing0091_zucchini,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+98,ing0092_large garlic cloves,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+99,ing0093_dried thyme,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+100,ing0094_buttermilk,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+101,ing0095_flour tortillas,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+102,ing0096_tomato sauce,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+103,ing0097_bay leaf,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+104,ing0098_granulated sugar,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+105,ing0099_celery,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+106,ing0100_ground beef,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+107,ing0101_coconut milk,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+108,ing0102_fresh cilantro,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+109,ing0103_plum tomatoes,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+110,ing0104_crushed red pepper,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+111,ing0105_chicken breasts,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+112,ing0106_ground coriander,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+113,ing0107_chopped cilantro,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+114,ing0108_mayonaise,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+115,ing0109_whole milk,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+116,ing0110_cucumber,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+117,ing0111_green chilies,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+118,ing0112_shredded cheddar cheese,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+119,ing0113_tumeric,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+120,ing0114_red wine vinegar,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+121,ing0115_white onion,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+122,ing0116_cinnamon,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+123,ing0117_curry powder,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+124,ing0118_sesame seeds,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+125,ing0119_worcestershire sauce,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+126,ing0120_ground ginger,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+127,ing0121_hot sauce,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+128,ing0122_red pepper flakes,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+129,ing0123_red chili peppers,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+130,ing0124_cinnamon sticks,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+131,ing0125_bacon,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+132,ing0126_whipping cream,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+133,ing0127_clove,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+134,ing0128_boneless skinless chicken breast halves,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+135,ing0129_peanut oil,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+136,ing0130_ground nutmeg,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+137,ing0131_warm water,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+138,ing0132_peeled fresh ginger,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+139,ing0133_mushrooms,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+140,ing0134_coarse salt,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+141,ing0135_large egg yolks,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+142,ing0136_celery ribs,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+143,ing0137_dried basil,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+144,ing0138_parmesan cheese,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+145,ing0139_cream cheese,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+146,ing0140_ground red pepper,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+147,ing0141_balsamic vinegar,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+148,ing0142_white vinegar,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+149,ing0143_egg yolks,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+150,ing0144_capers,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+151,ing0145_crushed red pepper flakes,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+152,ing0146_onion powder,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+153,ing0147_rice,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+154,ing0148_dijon mustard,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+155,ing0149_cold water,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+156,ing0150_mirin,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+157,ing0151_eggplant,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+158,ing0152_large egg whites,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+159,ing0153_powdered sugar,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+160,ing0154_fresh basil leaves,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+161,ing0155_lime wedges,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+162,ing0156_cooking oil,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+163,ing0157_cayenne,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+164,ing0158_sliced green onions,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+165,ing0159_raisins,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+166,ing0160_fat free less sodium chicken broth,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+167,ing0161_beansprouts,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+168,ing0162_ground pork,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+169,ing0163_shredded mozzarella cheese,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+170,ing0164_mozzarella cheese,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+171,ing0165_red pepper,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+172,ing0166_black peppercorns,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+173,ing0167_sauce,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+174,ing0168_sweet potatoes,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+175,ing0169_cheese,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+176,ing0170_coriander,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+177,ing0171_cherry tomatoes,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+178,ing0172_medium shrimp,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+179,ing0173_ketchup,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+180,ing0174_cheddar cheese,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+181,ing0175_oyster sauce,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+182,ing0176_leeks,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+183,ing0177_crushed tomatoes,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+184,ing0178_egg whites,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+185,ing0179_fresh mint,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+186,ing0180_white pepper,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+187,ing0181_oregano,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+188,ing0182_finely chopped onion,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+189,ing0183_low sodium soy sauce,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+190,ing0184_chopped celery,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+191,ing0185_fresh rosemary,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+192,ing0186_large shrimp,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+193,ing0187_hoisin sauce,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+194,ing0188_light brown sugar,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+195,ing0189_spring onions,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+196,ing0190_cabbage,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+197,ing0191_peanuts,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+198,ing0192_vegetable broth,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+199,ing0193_cooked rice,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+200,ing0194_cracked black pepper,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+201,ing0195_confectioners sugar,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+202,ing0196_ground pepper,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+203,ing0197_chickpeas,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+204,ing0198_bell pepper,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+205,ing0199_coriander seeds,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+206,ing0200_active dry yeast,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+207,ing0201_italian seasoning,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+208,ing0202_lean ground beef,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+209,ing0203_green pepper,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+210,ing0204_low salt chicken broth,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+211,ing0205_feta cheese crumbles,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+212,ing0206_frozen peas,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+213,ing0207_fresh oregano,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+214,ing0208_thyme,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+215,ing0209_cajun seasoning,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+216,ing0210_white wine,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+217,ing0211_cornmeal,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+218,ing0212_ground cloves,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+219,ing0213_beef broth,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+220,ing0214_plain yogurt,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+221,ing0215_chopped fresh thyme,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+222,ing0216_lemongrass,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+223,ing0217_long-grain rice,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+224,ing0218_boneless chicken skinless thigh,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+225,ing0219_spinach,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+226,ing0220_orange juice,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+227,ing0221_ground allspice,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+228,ing0222_toasted sesame oil,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+229,ing0223_ricotta cheese,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+230,ing0224_hot water,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+231,ing0225_white wine vinegar,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+232,ing0226_boiling water,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+233,ing0227_orange,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+234,ing0228_chopped garlic,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+235,ing0229_grated lemon zest,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+236,ing0230_fennel seeds,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+237,ing0231_parsley,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+238,ing0232_fresh thyme,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+239,ing0233_parmigiano reggiano cheese,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+240,ing0234_pinenuts,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+241,ing0235_light soy sauce,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+242,ing0236_smoked paprika,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+243,ing0237_yellow corn meal,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+244,ing0238_spaghetti,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+245,ing0239_ground white pepper,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+246,ing0240_sake,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+247,ing0241_low sodium chicken broth,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+248,ing0242_green beans,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+249,ing0243_fresh ginger root,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+250,ing0244_sweet onion,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+251,ing0245_half & half,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+252,ing0246_chile pepper,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+253,ing0247_chopped parsley,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+254,ing0248_cider vinegar,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+255,ing0249_corn,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+256,ing0250_chicken thighs,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+257,ing0251_mustard seeds,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+258,ing0252_vinegar,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+259,ing0253_chiles,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+260,ing0254_ghee,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+261,ing0255_tomatillos,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+262,ing0256_pasta,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+263,ing0257_basmati rice,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+264,ing0258_shiitake,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+265,ing0259_dark brown sugar,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+266,ing0260_chopped fresh mint,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+267,ing0261_vanilla,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+268,ing0262_hot pepper sauce,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+269,ing0263_bread crumbs,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+270,ing0264_green chile,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+271,ing0265_shredded Monterey Jack cheese,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+272,ing0266_tortilla chips,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+273,ing0267_enchilada sauce,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+274,ing0268_Sriracha,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+275,ing0269_serrano chile,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+276,ing0270_dark soy sauce,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+277,ing0271_cooked chicken,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+278,ing0272_dry red wine,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+279,ing0273_dry bread crumbs,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+280,ing0274_toasted sesame seeds,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+281,ing0275_pork,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+282,ing0276_chopped tomatoes,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+283,ing0277_fine sea salt,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+284,ing0278_arborio rice,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+285,ing0279_garlic paste,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+286,ing0280_fresh coriander,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+287,ing0281_radishes,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+288,ing0282_saffron threads,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+289,ing0283_prosciutto,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+290,ing0284_romaine lettuce,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+291,ing0285_fresh mushrooms,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+292,ing0286_corn kernels,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+293,ing0287_juice,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+294,ing0288_basil,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+295,ing0289_yellow bell pepper,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+296,ing0290_apple cider vinegar,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+297,ing0291_chopped pecans,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+298,ing0292_fresh parmesan cheese,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+299,ing0293_long grain white rice,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+300,ing0294_creole seasoning,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+301,ing0295_melted butter,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+302,ing0296_mango,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+303,ing0297_feta cheese,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+304,ing0298_baguette,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+305,ing0299_peaches,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+306,ing0300_basil leaves,numeric,category,1,1,train_ncolMax_65_forAnalysis_topN_300.csv
+307,m01_italian,numeric,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+308,m02_mexican,numeric,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+309,m03_southern_us,numeric,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+310,m04_indian,numeric,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+311,m05_chinese,numeric,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+312,m06_french,numeric,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+313,m07_cajun_creole,numeric,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+314,m08_thai,numeric,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+315,m09_japanese,numeric,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+316,m10_greek,numeric,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+317,m11_spanish,numeric,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+318,m12_korean,numeric,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+319,m13_vietnamese,numeric,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+320,m14_moroccan,numeric,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+321,m15_british,numeric,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+322,m16_filipino,numeric,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+323,m17_irish,numeric,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+324,m18_jamaican,numeric,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+325,m19_russian,numeric,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
+326,m20_brazilian,numeric,category,1,0,train_ncolMax_65_forAnalysis_topN_300.csv
