@@ -1,0 +1,103 @@
+---
+title: "What's Cookデータ(勾配ブースティング)"
+date: "`r Sys.Date()`"
+author: 
+  output:
+  rmdformats::readthedown:
+  highlight: kate
+  code_folding: hide
+  self_contained: true
+  thumbnails: false
+  lightbox: false
+  md_extensions: -ascii_identifiers
+  css: styles_customized.css
+---
+  
+```{r knitr_init, echo=FALSE, results="asis", cache=FALSE}
+# install.packages
+if(F){
+  install.packages("rmdformats", dependencies = T)
+  install.packages("DT", dependencies = T)
+}
+
+library(rmdformats)
+library(DT)
+
+## Global options
+options(max.print = "75")
+opts_chunk$set(echo = FALSE,
+               cache = FALSE,
+               prompt = FALSE,
+               tidy = FALSE,
+               comment = NA,
+               message = FALSE,
+               warning = FALSE)
+opts_knit$set(width = 75)
+```
+
+
+
+# 分析データ概要
+
+## 学習用データ数 (train.csv)
+```{r results="asis", echo=F}
+print(lstPrint[["nSample"]], quote=F)
+```
+
+
+## 説明変数
+```{r results="asis", echo=F}
+print(str_a, quota=F)
+```
+
+
+***
+
+
+## 学習/テスト用データ分割 (parition training data)
+```{r results="asis", echo=F}
+print(lstPrint[["trainDataRatio"]], quote=F)
+knitr::kable(lstPrint[["partitionData"]], format = "pandoc", caption="")
+```
+
+
+***
+
+
+# モデル構築結果
+
+
+## 変数重要度 (Variable Importance)
+```{r results="asis", echo=F}
+url <- paste0(getwd(), "/", lstOutFilePath[["varImp"]])
+cat(sprintf('![](%s)', url), sep="¥n")
+```
+
+
+***
+
+
+# モデル評価
+
+
+## 混同行列 (Confusion Matrix; train data)
+```{r results="asis", echo=F}
+DT::datatable(lstPrint[["ConfMat_train"]], extensions='ColReorder', options=list(dom='Rlfrtip', pageLength=20))
+```
+
+***
+
+## 混同行列 (Confusion Matrix; valid data)
+```{r results="asis", echo=F}
+DT::datatable(lstPrint[["ConfMat_valid"]], extensions='ColReorder', options=list(dom='Rlfrtip', pageLength=20))
+```
+
+***
+
+## 正解率 (Accuracy)
+```{r results="asis", echo=F}
+knitr::kable(lstPrint[["AccuracyInfo"]], format = "pandoc", caption="Accuracy")
+```
+
+***
+
