@@ -35,8 +35,8 @@ if(T){
 # nroundMax_cv
 if(T){
   #nroundMax_cv <- 200
-  #nroundMax_cv <- 50
-  nroundMax_cv <- 20
+  nroundMax_cv <- 50
+  #nroundMax_cv <- 20
   #nroundMax_cv <- 10
   #nroundMax_cv <- 5
   xgboostSettings[["nroundMax_cv"]] <- nroundMax_cv
