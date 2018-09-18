@@ -471,6 +471,40 @@ plotVarImp <- function(df, titleLabel, outFilePath, width, height,
 
 
 
+############################################
+
+
+# @name : plotVarImp_topN
+plotVarImp_topN <- function(topN, df, outFilePath, titleLabel) 
+{
+  # settings
+  if(T){
+    CNST_HEIGHT <- 1200
+    CNST_WIDTH <- CNST_HEIGHT * 0.8
+    if(T){
+      #CNST_FONT_SIZE <- 16
+      CNST_FONT_SIZE <- 14
+    }
+  }
+  
+  if(T){
+    # with RankID
+    strID <- round(rank(-df[,"value"]), 0)
+    strID <- paste("0",strID, sep="")
+    strID <- substr(strID, nchar(strID)-1, nchar(strID))
+    df[,"id"] <- paste(strID, " ", df[,"id"], sep="")
+    
+    # plotVarImp()
+    plotVarImp(df=df[c(1:topN),], titleLabel=titleLabel, outFilePath=outFilePath,  
+               width=CNST_WIDTH, height=CNST_HEIGHT, fontsize=CNST_FONT_SIZE, 
+               face="plain", fill="gray", hjust=0.5)
+  }
+}
+#=== [END]:plotVarImp_topN ===
+
+
+
+
 # @name : stratified_sampling_lstForm
 # @brief : 層別サンプリング
 stratified_sampling_lstForm <- function(df, vecStrataList, numOfSamplingRatio, isDeleteKey=F)
