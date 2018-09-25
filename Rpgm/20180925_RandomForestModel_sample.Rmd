@@ -1,0 +1,90 @@
+---
+title: "HousingPriceデータ (RandomForestモデル構築)"
+date: "`r Sys.Date()`"
+author: 
+  output:
+  rmdformats::readthedown:
+  highlight: kate
+  code_folding: hide
+  self_contained: true
+  thumbnails: false
+  lightbox: false
+  md_extensions: -ascii_identifiers
+  css: styles_customized.css
+---
+
+  
+```{r knitr_init, echo=FALSE, results="asis", cache=FALSE}
+## Global options
+options(max.print = "75")
+opts_chunk$set(echo = FALSE,
+               cache = FALSE,
+               prompt = FALSE,
+               tidy = FALSE,
+               comment = NA,
+               message = FALSE,
+               warning = FALSE)
+opts_knit$set(width = 75)
+```
+
+
+# 分析データ概要
+
+## 学習用データ数 (train.csv)
+```{r results="asis", echo=F}
+print(lstPrint[["nSample"]], quote=F)
+```
+
+
+## 説明変数
+```{r results="asis", echo=F}
+print(str_a, quota=F)
+```
+
+
+## 学習/テスト用データ分割 (parition training data)
+```{r results="asis", echo=F}
+knitr::kable(lstPrint[["partitionData"]], format = "pandoc", caption="")
+```
+
+
+***
+
+
+# モデル構築結果
+
+## 変数重要度 (Variable Importance, top5)
+```{r results="asis", echo=F}
+url <- paste0(getwd(), "/", lstOutFilePath[["varImp_topN_5"]])
+cat(sprintf('![](%s)', url), sep="¥n")
+```
+
+## 変数重要度 (Variable Importance, top10)
+```{r results="asis", echo=F}
+url <- paste0(getwd(), "/", lstOutFilePath[["varImp_topN_10"]])
+cat(sprintf('![](%s)', url), sep="¥n")
+```
+
+## 変数重要度 (Variable Importance, top20)
+```{r results="asis", echo=F}
+url <- paste0(getwd(), "/", lstOutFilePath[["varImp_topN_20"]])
+cat(sprintf('![](%s)', url), sep="¥n")
+```
+
+## 変数重要度 (Variable Importance, top30)
+```{r results="asis", echo=F}
+url <- paste0(getwd(), "/", lstOutFilePath[["varImp_topN_30"]])
+cat(sprintf('![](%s)', url), sep="¥n")
+```
+
+***
+
+# モデル評価
+
+## 実績値と予測値の誤差評価 (RMSE; Root Mean Squared Error)
+```{r results="asis", echo=F}
+knitr::kable(lstPrint[["RMSEInfo"]], format = "pandoc", caption="RMSE")
+```
+
+
+***
