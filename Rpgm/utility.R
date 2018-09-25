@@ -691,6 +691,39 @@ PlotROCCurve <- function(outFilePath, ROCTbl_train, ROCTbl_valid, mainTitle, sub
 #=== [END]:PlotROCCurve ===
 
 
+# ランダムフォレスト(ranger用): 変数重要度データの加工
+# n=変数の数, id=変数名, value=変数重要度, 
+# total=変数重要度の合計値, ratio=変数重要度の構成比
+convertVarImp_rangerRF <- function(rf, isSort=T, isNormalize=T)
+{
+  Imp <- ranger::importance(rf)
+  
+  if(T){
+    n <- length(Imp)
+    value <- as.numeric(Imp)
+    total <- sum(Imp)
+    ratio <- value/total
+  }
+  
+  # Normalize
+  if(isNormalize) {
+    value <- ratio
+    total <- sum(value)
+  }
+  
+  df <- data.frame("n"=n, "id"=names(Imp), "value"=value, 
+                   "total"=total, "ratio"=ratio, "type"="rangerRF")
+  
+  # sort
+  if(isSort) df <- df[order(df[,"value"], decreasing=T),]
+  
+  no <- c(1:nrow(df))
+  df <- cbind(no, df)
+  df$id <- factor(df$id, levels=df$id[order(df$value)])
+  
+  return(df)
+}
+
 
 
 #=== [END]:R-Script ===
