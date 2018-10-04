@@ -12,6 +12,8 @@ if(F){
 library(dplyr)
 library(wordcloud)
 
+par(family="HiraKakuProN-W3")
+
 ################
 ### settings ###
 ################
@@ -124,7 +126,7 @@ for(k in c(1:num_cuisine))
       min.freq <- df_wordFreq[min(topN_word, nrow(df_wordFreq)),"Freq"]
       wordcloud::wordcloud(df_wordFreq[,"ingredients_word"], df_wordFreq[,"Freq"], 
                            min.freq=min.freq, random.order=F, rot.per=0, 
-                           scale=c(4,1), family ="JP1", colors = brewer.pal(8,"Dark2"))
+                           scale=c(4,1), colors = brewer.pal(8,"Dark2"))
     }, TRUE)
     dev.off()
     
