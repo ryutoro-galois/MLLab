@@ -65,12 +65,12 @@ if(T){
 
 # ingredients_str
 if(T){
-  datTrain[,"ingredients_str"] <- gsub(" ", ".", datTrain[,"ingredients_str"], fixed=T)
-  datTrain[,"ingredients_str"] <- gsub("|"," ", datTrain[,"ingredients_str"], fixed=T)
+  datTrain[,"ingredients_str"] <- gsub(" ", ".", datTrain[,"ingredients_str"])
+  datTrain[,"ingredients_str"] <- gsub("|"," ", datTrain[,"ingredients_str"])
 }
 if(T){
-  datTest[,"ingredients_str"] <- gsub(" ", ".", datTest[,"ingredients_str"], fixed=T)
-  datTest[,"ingredients_str"] <- gsub("|"," ", datTest[,"ingredients_str"], fixed=T)
+  datTest[,"ingredients_str"] <- gsub(" ", ".", datTest[,"ingredients_str"])
+  datTest[,"ingredients_str"] <- gsub("|"," ", datTest[,"ingredients_str"])
 }
 
 # filter explanatory variables
