@@ -1,0 +1,57 @@
+---
+title: "What's Cookデータ(fastrtext)"
+date: "`r Sys.Date()`"
+output:
+  rmdformats::readthedown:
+  highlight: kate
+  code_folding: hide
+  self_contained: true
+  thumbnails: false
+  lightbox: false
+  md_extensions: -ascii_identifiers
+  css: styles_customized.css
+---
+  
+```{r knitr_init, echo=FALSE, results="asis", cache=FALSE}
+# install.packages
+if(F){
+  install.packages("rmdformats", dependencies = T)
+  install.packages("DT", dependencies = T)
+}
+
+library(rmdformats)
+library(DT)
+
+## Global options
+options(max.print = "75")
+opts_chunk$set(echo = FALSE,
+               cache = FALSE,
+               prompt = FALSE,
+               tidy = FALSE,
+               comment = NA,
+               message = FALSE,
+               warning = FALSE)
+opts_knit$set(width = 75)
+```
+
+
+## cuisineSimilarity
+```{r results="asis", echo=F}
+url <- paste0(getwd(), "/", lstOutFilePath[["cuisineSimilarity"]])
+cat(sprintf('![](%s)', url), sep="¥n")
+```
+
+***
+
+## ingredientSimilarity
+```{r results="asis", echo=F}
+for(k in c(1:num_objective_class)){
+  cuisine_k <- targetNameList[k]
+  print(paste0("[", cuisine_k, "]\n\n"), quote=F)
+  url <- paste0(getwd(), "/", lstOutFilePath[[paste0("ingredientSimilarity_", cuisine_k)]])
+  cat(sprintf('![](%s)', url), sep="¥n")
+}
+```
+
+***
+
